@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 COPY streamlit_app.py ./
 RUN apt-get update
-RUN apt install python
+RUN apt-get update
+RUN apt install python3
 RUN pip install streamlit
 COPY . .
 ENV PYTHONUNBUFFERED=1
