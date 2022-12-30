@@ -6,5 +6,4 @@ COPY streamlit_app.py ./
 RUN pip install -r requirements.txt
 COPY . .
 ENV PYTHONUNBUFFERED=1
-ENTRYPOINT ["streamlit", "run"]
-CMD ["streamlit_app.py"]
+CMD ["streamlit", "run", "--server.port", "80", "streamlit_app.py"]
