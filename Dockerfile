@@ -1,7 +1,5 @@
 FROM python:3.10-slim
 EXPOSE 8501
-ENV STREAMLIT_SERVER_PORT=80
-ENV STREAMLIT_SERVER_COOKIE_SECRET=dontforgottochangeme
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 COPY streamlit_app.py ./
