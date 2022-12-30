@@ -5,7 +5,7 @@ COPY requirements.txt ./
 COPY streamlit_app.py ./
 RUN apt-get update
 RUN apt-get update
-RUN apt install python3
+RUN apt install python3 -y
 RUN pip install streamlit
 COPY . .
 ENV PYTHONUNBUFFERED=1
