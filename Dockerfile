@@ -3,7 +3,7 @@ EXPOSE 8501
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 COPY streamlit_app.py ./
-RUN sudo apt-get python
+RUN apt install python3
 RUN pip install streamlit
 COPY . .
 ENV PYTHONUNBUFFERED=1
