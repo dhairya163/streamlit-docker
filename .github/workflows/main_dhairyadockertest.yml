@@ -52,6 +52,6 @@ jobs:
         
     services:
       servicename:
-        image: streamlit
+        image: dhariyadockertest.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f045d25881154f79abde2a460facb00b }}/dhariyadockertest/streamlit:${{ github.sha }}
         ports:
           - '80:8501'     
