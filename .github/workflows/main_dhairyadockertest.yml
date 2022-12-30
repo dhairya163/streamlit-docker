@@ -49,9 +49,3 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_a7777204ec1447a28f6fbffda3e0a9aa }}
         images: 'dhariyadockertest.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f045d25881154f79abde2a460facb00b }}/dhariyadockertest/streamlit:${{ github.sha }}'
-        
-    services:
-      servicename:
-        image: dhariyadockertest.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f045d25881154f79abde2a460facb00b }}/dhariyadockertest/streamlit:${{ github.sha }}
-        ports:
-          - '80:8501'     
