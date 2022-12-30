@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 COPY . .
 ENV PYTHONUNBUFFERED=1
 ENTRYPOINT ["streamlit", "run"]
-CMD ["streamlit_app.py"]
+CMD ["streamlit_app.py","--server.port=80"]
